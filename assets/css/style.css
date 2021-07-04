@@ -379,7 +379,7 @@ h2::after {
   }
 }
 
-.footer h3 {
+.footer .footer__title {
   font-family: 'Playfair Display', serif;
   color: #fff;
   font-size: 24px;
@@ -427,7 +427,7 @@ h2::after {
   margin: 0 20px 20px 0;
 }
 
-.dflex .footer-text {
+.dflex .footer__text {
   margin-bottom: 37px;
 }
 
@@ -437,7 +437,7 @@ h2::after {
           justify-content: start;
 }
 
-.dflex .form .form-input {
+.dflex .form .form__input {
   background: rgba(255, 255, 255, 0.4);
   padding: 10px;
   outline: none;
@@ -445,23 +445,23 @@ h2::after {
   border-radius: 0;
 }
 
-.dflex .form .form-input::-webkit-input-placeholder {
+.dflex .form .form__input::-webkit-input-placeholder {
   color: #969696;
 }
 
-.dflex .form .form-input:-ms-input-placeholder {
+.dflex .form .form__input:-ms-input-placeholder {
   color: #969696;
 }
 
-.dflex .form .form-input::-ms-input-placeholder {
+.dflex .form .form__input::-ms-input-placeholder {
   color: #969696;
 }
 
-.dflex .form .form-input::placeholder {
+.dflex .form .form__input::placeholder {
   color: #969696;
 }
 
-.dflex .form .form-btn {
+.dflex .form .form__btn {
   color: #fff;
   text-transform: uppercase;
   font-size: 14px;
@@ -473,10 +473,7 @@ h2::after {
   cursor: pointer;
 }
 
-.footer__last-line {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+.footer__bottom .dflex {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -486,17 +483,17 @@ h2::after {
   min-height: 50px;
 }
 
-.footer__last-line p {
+.footer__bottom .dflex .footer__bottom-text {
   font-size: 12px;
 }
 
-.footer__last-line a {
+.footer__bottom .dflex .footer__bottom-link {
   font-size: 12px;
   color: #D0D0D0;
 }
 
 @media screen and (max-width: 480px) {
-  .footer h3 {
+  .footer .footer__title {
     margin-bottom: 20px;
   }
   .footer .footer__top {
