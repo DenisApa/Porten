@@ -544,6 +544,7 @@ h2::after {
           align-items: center;
   width: 100%;
   min-height: 810px;
+  padding: 160px 0;
 }
 
 .intro .intro__logo {
@@ -814,6 +815,72 @@ h2::after {
   margin-right: 30px;
 }
 
+@media screen and (max-width: 1024px) {
+  .new {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .new .new__season {
+    max-width: 100%;
+    padding: 50px 0;
+  }
+  .new .dflex {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .new .new__collection {
+    background-position: top;
+    max-width: 100%;
+    min-height: 450px;
+    padding-bottom: 0;
+  }
+  .old {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .old .old__block-img {
+    max-width: 100%;
+    min-height: 350px;
+  }
+  .old .old__collection {
+    max-width: 100%;
+    padding: 50px 0;
+  }
+  .old .old__collection .section-text {
+    padding: 0 20px;
+  }
+  .brands {
+    padding: 50px 0;
+  }
+  .brands .brands__img {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .brands .brands__img .img {
+    max-width: 150px;
+  }
+  .brands .brands__img .img:not(:last-child) {
+    margin-right: 0;
+  }
+}
+
 @media screen and (max-width: 480px) {
   h2 {
     font-size: 28px;
@@ -843,55 +910,14 @@ h2::after {
   .btn {
     font-size: 14px;
   }
-  .new {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .new .new__season {
-    max-width: 100%;
-    padding: 50px 0;
-  }
   .new .dflex {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
   }
   .new .new__collection {
-    max-width: 100%;
-    min-height: 450px;
-    padding-bottom: 0;
-  }
-  .old {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: column-reverse;
-            flex-direction: column-reverse;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-  .old .old__block-img {
-    max-width: 100%;
-    min-height: 350px;
-  }
-  .old .old__collection {
-    max-width: 100%;
-    padding: 50px 0;
-  }
-  .old .old__collection .section-text {
-    padding: 0 20px;
+    background-position: left;
   }
   .new-goods {
     padding: 50px 0;
@@ -908,21 +934,5 @@ h2::after {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-  }
-  .brands {
-    padding: 50px 0;
-  }
-  .brands .brands__img {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-  .brands .brands__img .img {
-    max-width: 150px;
-  }
-  .brands .brands__img .img:not(:last-child) {
-    margin-right: 0;
   }
 }
