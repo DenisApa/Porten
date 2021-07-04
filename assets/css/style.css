@@ -352,7 +352,7 @@ h2::after {
   }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 768px) {
   .header {
     position: relative;
   }
@@ -362,6 +362,18 @@ h2::after {
   .nav__desktop {
     display: none;
   }
+  .nav__mobile {
+    display: block;
+    position: absolute;
+    top: 38%;
+    left: 89%;
+  }
+  .header__right .search {
+    margin-right: 75px;
+  }
+}
+
+@media screen and (max-width: 480px) {
   .nav__mobile {
     display: block;
     position: absolute;
