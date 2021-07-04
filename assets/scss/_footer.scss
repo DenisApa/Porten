@@ -82,7 +82,40 @@
 	}
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 1024px) {
+	.footer {
+		.footer__title {
+			margin-bottom: 20px;
+		}
+		.footer__top {
+		padding: 40px 0 30px;
+		.item-inner {
+			max-width: 100%;
+			min-width: 0;
+			margin-bottom: 30px;
+		}
+		}
+		.footer__about {
+			.footer-text {
+				margin-bottom: 0;
+			}	
+		}
+		.form {
+			.form-input {
+				width: 50%;
+			}
+			.form-btn {
+				width: 50%;
+			}
+		}
+	}
+	.dflex .footer__tags .footer__tags-link {
+		margin: 0 10px 10px 0;
+	}
+}
+
+
+@media screen and (max-width: 768px) {
 	.footer {
 		.footer__title {
 			margin-bottom: 20px;

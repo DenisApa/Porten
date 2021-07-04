@@ -255,11 +255,11 @@
 		display: block;
 		position: absolute;
 		top: 38%;
-		left: 89%;
+		right: 20px;
 	}
  	.header__right {
 		.search {
-			margin-right: 75px;
+			margin-right: 50px;
 		}
 	}
 }
@@ -269,19 +269,6 @@
 		display: block;
 		position: absolute;
 		top: 38%;
-		left: 89%;
-	}
-	.header__right {
-		.search {
-			margin-right: 50px;
-		}
-	}
-}
-
-@media screen and (max-width: 425px) {
-	.header__right {
-		.search {
-			margin-right: 40px;
-		}
+		right: 20px;
 	}
 }

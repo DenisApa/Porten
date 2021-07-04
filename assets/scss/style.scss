@@ -241,16 +241,26 @@ h2 {
    .brands__img {
       display: flex;
       flex-direction: row;
-      justify-content: space-between;
+      justify-content: center;
+      flex-wrap: wrap;
       .img {
-         &:not(:last-child){
-         margin-right: 30px;
-         }
+         max-width: 255px;
+         margin: 0 10px;
       }
    }
 }
 
 @media screen and (max-width: 1024px) {
+   .intro {
+      min-height: 740px;
+      .intro__logo {
+         max-width: 270px;
+         min-height: 270px;
+      }
+      .intro__text {
+         padding: 0 20px;
+      }
+   }
    .new {
       flex-direction: column;
       .new__season {
@@ -308,14 +318,8 @@ h2 {
      }
    }
    .intro {
-      min-height: 740px;
-      .intro__logo {
-         max-width: 270px;
-         min-height: 270px;
-      }
       .intro__text {
          font-size: 14px;
-         padding: 0 20px;
       }
    }
    .product-card {
