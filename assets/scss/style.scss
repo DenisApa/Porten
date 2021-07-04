@@ -155,7 +155,7 @@ h2 {
       background: url('../../assets/image/new/Rectangle\ 8-min.jpg') left/cover;
       width: 100%;
       max-width: 45%;
-      padding-bottom: 100px;
+      padding: 100px 0;
       .section-title {
          &::after {
             content: '';
@@ -224,7 +224,7 @@ h2 {
 }
 
 .brands {
-   padding: 60px;
+   padding: 60px 0;
    background: #0F0F0F;
    .dflex {
       flex-direction: column;
