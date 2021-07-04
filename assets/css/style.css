@@ -918,9 +918,6 @@ h2::after {
   .brands .brands__img .img {
     max-width: 150px;
   }
-  .brands .brands__img .img:not(:last-child) {
-    margin-right: 0;
-  }
 }
 
 @media screen and (max-width: 480px) {
