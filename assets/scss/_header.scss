@@ -1,4 +1,11 @@
+.header {
+	position: sticky;
+	top: 0;
+	width: 100%;
+}
+
 .header__top {
+	background: #000;
 	a, p {
 		font-size: 12px;
 		color: #969696;
@@ -50,6 +57,33 @@
 				&:hover {
 				background: #1F1F1F;
 					}
+				}
+			}
+			.top__menu {
+				display: flex;
+				list-style-type: none;
+				& li:last-child {
+					position: relative;
+				}
+			}
+			.sub__menu {
+				display: none;
+				background: #000;
+				list-style-type: none;
+				position: absolute;
+				top: 51px;
+				left: -32px;
+				li {
+					text-align: center;
+					display: flex;
+					flex-direction: column;
+					align-content: center;
+					min-width: 200px;
+				}
+			}
+			.top__menu {
+				& li:last-child:hover .sub__menu {
+					display: block;
 				}
 			}
 		}

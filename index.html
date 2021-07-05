@@ -37,9 +37,18 @@
 				<div class="header__right dflex">
 					<nav class="nav">
 						<div class="nav__desktop">
-							<a class="nav__link" href="#">Понравилось</a>
-							<a class="nav__link" href="#">Личный кабинет</a>
-							<a class="nav__link" href="#">Настройки</a>
+							<ul class="top__menu">
+								<li><a class="nav__link" href="#">Понравилось</a></li>
+								<li><a class="nav__link" href="#">Личный кабинет</a></li>
+								<li><a class="nav__link" href="#">Настройки</a>
+									<ul class="sub__menu">
+										<li><a class="nav__link" href="#">Настройки</a></li>
+										<li><a class="nav__link" href="#">Пользовательские</a></li>
+										<li><a class="nav__link" href="#">Link3</a></li>
+										<li><a class="nav__link" href="#">Link4</a></li>
+									</ul>
+								</li>
+							</ul>
 						</div>
 						<button class="nav__mobile">
 							<div class="mob-block"></div>
@@ -60,7 +69,8 @@
 
 	</header>
 
-	<main class="main">
+	<main class="main" id="top">
+
 		<section class="intro dflex">
 			<div class="intro__logo dflex">
 				<img class="ilogo img" src="./assets/image/intro/PORTEN.svg" alt="">
@@ -73,6 +83,7 @@
 					ullamcorper ultricies morbi ipsum sem metus pharetra, mi. Tortor nibh magna feugiat id nunc, dui nisl
 					viverra.</p>
 			</div>
+
 		</section>
 		<section class="new dflex">
 			<div class="new__season dflex">
@@ -284,6 +295,12 @@
 			</div>
 		</div>
 	</footer>
+
+	<div class="button-to-top">
+		<a href="#top"><img class="img" src="./assets/image/pngwing.com.png" alt=""></a>
+	</div>
+
+	<script src="./assets/js/script.js"></script>
 </body>
 
 </html>
